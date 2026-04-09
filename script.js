@@ -144,7 +144,6 @@ document.getElementById('membershipForm').addEventListener('submit', async (e) =
 });
 
 // Booking Form Submission
-document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('bookingForm').addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -152,7 +151,7 @@ document.getElementById('bookingForm').addEventListener('submit', async (e) => {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
-        service: document.getElementyId('service').value,
+        service: document.getElementById('service').value,
         date: document.getElementById('date').value,
         message: document.getElementById('message').value
     };
@@ -192,7 +191,6 @@ document.getElementById('bookingForm').addEventListener('submit', async (e) => {
         console.error('Error:', error);
     }
 });
-
 
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
