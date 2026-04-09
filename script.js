@@ -144,6 +144,7 @@ document.getElementById('membershipForm').addEventListener('submit', async (e) =
 });
 
 // Booking Form Submission
+document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('bookingForm').addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -191,6 +192,7 @@ document.getElementById('bookingForm').addEventListener('submit', async (e) => {
         console.error('Error:', error);
     }
 });
+
 
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
